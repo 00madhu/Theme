@@ -1,0 +1,19 @@
+global-components:
+  Version: 1.x
+  css:
+    theme:
+      css/base.css: {}
+      css/custom-style.css: {}
+      css/custom-media.css: {}
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+global-styling:
+  css:
+    component:
+      css/style.css: {}    
