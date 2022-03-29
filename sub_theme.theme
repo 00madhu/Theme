@@ -9,6 +9,7 @@
 use Drupal\Core\Template\Attribute; // this should be at the top of your MY_THEME.theme file
 
 function sub_theme_preprocess_breadcrumb(&$variables) {
+	var_dump($variables);
 	  $icon_select = theme_get_setting('icon_select');
   if ($variables['breadcrumb']) {
     $request = \Drupal::request();
@@ -17,7 +18,7 @@ function sub_theme_preprocess_breadcrumb(&$variables) {
     
     if (!empty($page_title)) {
       $variables['breadcrumb'][] = [
-        'text' => $icon_select .$page_title,
+        'text' => $icon_select.$page_title,
         'attributes' => new Attribute(['class' => ['active']])
       ];
     }
