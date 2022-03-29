@@ -3,7 +3,8 @@
  * @file
  * Contains the theme's settings form.
  */
-
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\system\Form\ThemeSettingsForm;
 /**
  * Implements hook_form_system_theme_settings_alter().
  */
